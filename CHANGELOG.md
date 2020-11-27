@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/kingback/my-nice-lib/compare/v1.0.0...v2.0.0) (2020-11-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **aaa:** asdasdad
+
+### Features
+
+* **aaa:** aaaaa ([ed1d676](https://github.com/kingback/my-nice-lib/commit/ed1d676aff381dca715f0c05cde939d44ab6a4eb)), closes [#1](https://github.com/kingback/my-nice-lib/issues/1)
+
 ## 1.0.0 (2020-11-27)
 
 
