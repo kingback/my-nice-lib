@@ -17,8 +17,11 @@
     "push": "npm run commit && git push",
     "push:tag": "git push --follow-tags origin main",
     "sv": "standard-version",
+    "sv:beta": "standard-version --prerelease beta --skip.tag --skip.changelog",
     "pub": "npm publish",
-    "release": "npm run sv && npm run push:tag && conventional-github-releaser -p angular && npm run pub"
+    "pub:beta": "npm publish --tag beta",
+    "release": "npm run sv && npm run push:tag && conventional-github-releaser -p angular && npm run pub",
+    "release:beta": "npm run sv:beta && npm run pub:beta"
   },
   "repository": {
     "type": "git",
