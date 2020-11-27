@@ -6,6 +6,8 @@
 
 ![npm](https://img.shields.io/npm/dw/my-nice-lib)
 
+![NPM](https://img.shields.io/npm/l/my-nice-lib)
+
 ![](https://img.shields.io/badge/by-kingback-brightgreen)
 
 my-nice-lib
