@@ -11,6 +11,7 @@
     "build:umd": "BABEL_BUILD_TYPE=esm rollup --config",
     "build": "npm run build:umd & npm run build:esm & npm run build:lib",
     "test": "jest --coverage",
+    "coveralls": "npm test && cat ./coverage/lcov.info | coveralls",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -32,6 +33,7 @@
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
+    "coveralls": "^3.1.0",
     "eslint": "^7.14.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
