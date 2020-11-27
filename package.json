@@ -1,0 +1,43 @@
+{
+  "name": "my-nice-lib",
+  "version": "1.0.0",
+  "description": "my nice lib",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "scripts": {
+    "eslint": "eslint src --fix",
+    "build:lib": "babel src --out-dir lib",
+    "build:esm": "BABEL_BUILD_TYPE=esm babel src --out-dir esm",
+    "build:umd": "BABEL_BUILD_TYPE=esm rollup --config",
+    "build": "npm run build:umd & npm run build:esm & npm run build:lib",
+    "test": "jest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingback/my-nice-lib.git"
+  },
+  "keywords": [
+    "my",
+    "nice",
+    "lib"
+  ],
+  "author": "ningzbruc@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kingback/my-nice-lib/issues"
+  },
+  "homepage": "https://github.com/kingback/my-nice-lib#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "rollup": "^2.33.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
