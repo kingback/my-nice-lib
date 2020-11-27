@@ -4,6 +4,6 @@ export default function add() {
   }
 
   return args.reduce(function (prev, next) {
-    return prev + next;
+    return prev + (Number(next) || 0);
   }, 0);
 }
